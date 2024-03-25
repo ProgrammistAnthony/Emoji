@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+.d-none{
+    display: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1040px;
+    padding: 0 15px;
+}
+
+.emoji__header {
+    border: 1px solid var(--Stroke-Input, #CED4DA);
+    background: linear-gradient(92deg, #087990 0.12%, #055160 100%);
+}
+.emoji__content{
+    margin: 68px 0;
+}
+.emoji__title {
+    color: #CFF4FC;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+}
+.emoji__text {
+    color: #CFF4FC;
+    font-size: 21px;
+    line-height: 36px; /* 171.429% */
+    text-align: center;
+}
+.emoji__finder {
+    border-radius: 4px;
+    border: 1px solid #CED4DA;
+    width: 420px;
+    text-align: center;
+    color: #ABB5BE;
+    font-size: 24px;
+    line-height: 21px; 
+    transition: 1s;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 22px 32px;
+}
+
+.emoji__finder:focus{
+    width: 820px;
+}
+
+
+.emoji__hero {
+    background: #EDEEF3;
+}
+.emoji__cards {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1010px;
+    width: 100%;
+}
+.emoji__card {
+    border-radius: 4px;
+    border: 1px solid #DEE2E6;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    max-width: 316px;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.emoji__smile {
+    color: #68717A;
+    font-size: 48px;
+    line-height: 48px; 
+}
+.emoji__name {
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px; 
+    text-decoration-line: underline;
+    margin-top: 18px;
+}
+.emoji__about {
+    color: #3F444A;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+    max-width: 268px;
+    width: 100%;
+}
+
+.emoji__footer {
+    background: #EDEEF3;
+}
+.emoji__hr{
+    color: #CED4DA;
+    background: var(--Stroke-Input, #CED4DA);
+}
+.footer__text {
+    color: #6C757D;
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px; 
+    padding:  15px;
+}
+
+@media (max-width: 460px) {
+    .emoji__finder{
+        max-width: 290px;
+    }
+}
