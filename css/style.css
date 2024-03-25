@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Inter, sans-serif;
 }
+body{
+    background: #EDEEF3;
+}
 .d-none{
     display: none;
 }
@@ -58,12 +61,9 @@
     background: #EDEEF3;
 }
 .emoji__cards {
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding: 80px 0 50px 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     max-width: 1010px;
     width: 100%;
 }
@@ -79,6 +79,7 @@
     width: 100%;
     margin-right: 20px;
     margin-bottom: 20px;
+    height: 184px;
 }
 .emoji__smile {
     color: #68717A;
@@ -115,6 +116,12 @@
     font-size: 16px;
     line-height: 21px; 
     padding:  15px;
+}
+
+@media (max-width: 1054px) {
+    .emoji__cards {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 460px) {
