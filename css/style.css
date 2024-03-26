@@ -124,6 +124,12 @@ body{
     }
 }
 
+@media (max-width: 720px) {
+    .emoji__card{
+        margin-left: 0;
+    }
+}
+
 @media (max-width: 460px) {
     .emoji__finder{
         max-width: 290px;
