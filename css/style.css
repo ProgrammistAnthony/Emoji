@@ -126,7 +126,7 @@ body{
 
 @media (max-width: 720px) {
     .emoji__card{
-        margin-left: 0;
+        margin-right: 0;
     }
 }
 

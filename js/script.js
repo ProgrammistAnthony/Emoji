@@ -14,9 +14,9 @@ data.forEach((e) => {
 });
 
 let inputHandler = (evt) => {
-    let value = evt.target.value;
-    const findName = data.filter((el) => el.title.toLowerCase().includes(value.toLowerCase()).trim());
-    const findAbout = data.filter((el) => el.keywords.toLowerCase().includes(value.toLowerCase()).trim());
+    let value = evt.target.value.trim();
+    const findName = data.filter((el) => el.title.toLowerCase().includes(value.toLowerCase()));
+    const findAbout = data.filter((el) => el.keywords.toLowerCase().includes(value.toLowerCase()));
     const result = [...new Set([...findName, ...findAbout])];
     buttonHandler(result);
 };  
